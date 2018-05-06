@@ -1,8 +1,10 @@
-﻿namespace multithreading
+﻿using System.Runtime.InteropServices;
+
+namespace multithreading
 {
-    partial class Program
+    public class Program
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
             IRunable item = 
             // new IntroSample();
@@ -10,7 +12,11 @@
             // new ParametrizedThreadStartSample();
             // new ThreadSynchSample();
             // new MonitorSample();
-            new AutoResetEventSample();
+            // new AutoResetEventSample();
+            // new MutexSample();
+            // new MutexSingleAppSample();
+            // new SemaphoreSample();
+            new TimerSample();
 
             item.Run();
         }
